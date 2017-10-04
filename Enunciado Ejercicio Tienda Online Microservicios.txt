@@ -118,14 +118,21 @@ Servicio Cobro
 Modelo de Datos
 -------------------
 
+	Cliente
+		
+		long idCliente
+		String tarifa
+		String cuentaCorriente
+
 	DatosPago
 		long numTarjeta
 		string cvc
 		int mes
 		int anyo
+		String nombreApellidos 
 
 -------------------
 Funcionalidad
 -------------------
 
-	pagar(datosPago)
+	pagar(datosPago, idCliente, cantidad)
