@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: D:\Bitbucket\Spring\workspace_spring_cloud\Repo_Git_Config
+          uri: https://github.com/victorherrerocazurro/RepositorioConfiguraciones
 security:
   user:
     password: mipassword

@@ -14,7 +14,7 @@ import feign.auth.BasicAuthRequestInterceptor;
 public class Configuracion {
 	@Bean
     public BasicAuthRequestInterceptor basicAuthRequestInterceptor() {
-         return new BasicAuthRequestInterceptor("user", "mipassword");
+         return new BasicAuthRequestInterceptor("user", "passwordholamundo");
     }
 }
 

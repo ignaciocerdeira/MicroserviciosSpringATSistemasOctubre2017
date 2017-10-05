@@ -33,7 +33,7 @@ class HolaMundoClienteController {
 	public String home() {
 		
 		restTemplate.getInterceptors().add(
-				  new BasicAuthorizationInterceptor("user", "mipassword"));
+				  new BasicAuthorizationInterceptor("user", "passwordholamundo"));
 		
 		//Conexion con el servicio hola mundo a traves de Eureka, con el identificador con el que el servicio se regitra en Eureka
 		ResponseEntity<String> respuesta = restTemplate.exchange("http://holamundo", HttpMethod.GET, null, String.class, new Object[]{});

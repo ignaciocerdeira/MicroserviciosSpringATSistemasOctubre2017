@@ -6,3 +6,10 @@ spring:
       enabled: true
       uri: http://user:mipassword@localhost:8082
       failFast: true
+
+security:
+  user:
+    password: passwordholamundo
+    
+server:
+  port: 8086

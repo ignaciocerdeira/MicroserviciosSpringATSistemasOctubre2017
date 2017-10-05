@@ -8,15 +8,17 @@ eureka:
   
 zuul:
   routes:
+    cliente:
+      path: /cliente/**
+      serviceId: cliente
     holamundo:
       path: /holamundo/**
       #Para mapeo de las url directas a un servicio
-      url: http://localhost:8080/
+      #url: http://localhost:8080/
       
       #Para mapeo de servicios registrados en Eureka 
-      #serviceId: holamundo
-      
+      serviceId: holamundo
       sensitive-headers: 
-      custom-sensitive-headers: true
+      #custom-sensitive-headers: true
   ignore-security-headers: false
   
